@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ladybug</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #e50914;
+            background-image: radial-gradient(#111 15%, transparent 16%), radial-gradient(#111 15%, transparent 16%);
+            background-size: 60px 60px;
+            background-position: 0 0, 30px 30px;
+        }
+
+        .footer-bg {
+            background: linear-gradient(to bottom, rgba(0,0,0,0.85), rgba(10,10,10,0.98)),
+                        url('68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f7a47506837694b41774c544954513d3d2d3637373937393430322e313537623161376630643133646238323638303134373839303333322e6a7067.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .ladybug-card {
+            background-color: #0f0f0f;
+            border: 3px solid #e50914;
+            box-shadow: 0 0 25px rgba(229, 9, 20, 0.5), 0 20px 40px rgba(0, 0, 0, 0.8);
+        }
+
+        @keyframes pulse-slow {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.01); }
+        }
+
+        .animate-pulse-slow {
+            animation: pulse-slow 4s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between text-gray-100">
+
+    <header class="w-full py-6 text-center">
+        <h1 class="text-white text-3xl md:text-4xl font-bold tracking-wider drop-shadow-[0_2px_10px_rgba(229,9,20,0.8)]">
+            🐞 Para Ladybug 🖤
+        </h1>
+    </header>
+
+    <main class="flex-grow flex flex-col items-center justify-center px-4 py-8 space-y-10">
+
+        <div class="ladybug-card rounded-3xl max-w-xl w-full p-8 md:p-10 text-left animate-pulse-slow relative overflow-hidden">
+
+            <div class="absolute -top-10 -right-10 w-24 h-24 bg-red-600 rounded-full flex items-end justify-start p-3 shadow-lg">
+                <span class="text-white text-xl">🐞</span>
+            </div>
+
+
+            <div class="mb-6 text-center">
+                <span class="inline-block bg-red-950 text-red-400 border border-red-800 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest mb-3">
+                    Cartita
+                </span>
+                <h2 class="text-2xl md:text-3xl font-bold text-white tracking-wide">
+                    Daniella,
+                </h2>
+            </div>
+
+            <div class="space-y-4 text-gray-300 text-sm md:text-base leading-relaxed">
+                <p>
+                    Te escribo todo esto porque quería que supieras algo simple: estoy aquí. Este es el motivo.
+                </p>
+                <p>
+                    Con respecto a lo que hemos hablado,se perfectamente que tienes miedo, y lo entiendo. Solo quiero que sepas que estoy aquí, y que voy a seguir estando. No con palabras. Con hechos. Y cuando estés lista para confiar otra vez, vas a ver que no me fui.
+                </p>
+
+                <p>Sé que te proteges. Sé que a veces el corazón te pesa y la mente te dice que no confíes. Y lo entiendo. No te pido que confíes hoy. No te pido que decidas nada. No te pido que sientas más de lo que sientes.</p>
+
+                <p>Solo quería que supieras que estoy. Que te veo. Que te extraño, sí, pero que puedo esperar. Que no me voy a ir por un día de silencio, ni por una puerta que se cierra suave, ni por un "poquito a poquito".</p>
+
+                <p>Estos dos detalles que te dejo son pequeños, pero son míos, para ti. No espero nada a cambio. Solo quería que tuvieras algo mío cerca.</p>
+
+                <p>Y no hay ningún motivo especial para esto. No es una fecha. No es un aniversario. No es una ocasión. Simplemente me nació hacerlo. Porque a veces no hace falta una fecha especial para darle un detalle a alguien que te importa.</p>
+
+                <p>Esto también es un gesto mío para ti, como el del 21 de septiembre. Aquel día te di flores, una carta, unos detalles, y me encantó verte recibirlos. No esperaba nada entonces, y no espero nada ahora. Solo quería que supieras que sigo aquí, con el mismo cariño, sin prisa, sin condiciones.</p>
+
+                <p>Ayer lloré. Fue un momento vulnerable. Pero ya estoy bien. No te preocupes por mí. Puedo sostenerme.</p>
+
+                <p>No te prometo nada que no pueda controlar. No te prometo un futuro. No te prometo que todo será como antes. Solo te prometo esto: estar. Sin presión. Sin exigencias. Sin castigarte por tus tiempos.</p>
+
+                <p>Cuando quieras verme, aquí estoy. Cuando quieras hablar, aquí estoy. Cuando quieras silencio, también.</p>
+
+                <p>Y si algún día quieres llorar, y no puedes sola, aquí estoy. No para arreglarte. Solo para sostenerte.</p>
+
+                <p>Con calma. Con cariño. Sin prisa.</p>
+
+                <div class="pt-4 text-right text-red-400 font-semibold text-lg italic">
+                    — Alejandro
+                </div>
+            </div>
+        </div>
+
+
+        <div class="ladybug-card rounded-2xl max-w-md w-full p-6 text-center">
+            <h3 class="text-xl font-bold text-white mb-2">Algo mas...</h3>
+            <p class="text-xs text-gray-400 mb-4">Ingresa el código de 8 caracteres para continuar</p>
+
+            <form onsubmit="checkCode(event)" class="space-y-4">
+                <div>
+                    <input
+                        type="password"
+                        id="secretCode"
+                        maxlength="8"
+                        placeholder="••••••••"
+                        class="w-full text-center tracking-widest text-lg font-bold bg-black text-red-500 border-2 border-red-600 rounded-xl py-2 px-4 focus:outline-none focus:border-red-400 focus:ring-2 focus:ring-red-500 placeholder-gray-600"
+                        required
+                    >
+                </div>
+
+                <button
+                    type="submit"
+                    class="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-6 rounded-xl shadow-[0_0_15px_rgba(229,9,20,0.6)] transition duration-300"
+                >
+                    Acceder
+                </button>
+            </form>
+
+            <div id="errorMessage" class="mt-3 text-sm font-semibold text-red-500 hidden">
+                error en el codigo, daniella
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer-bg text-white py-12 px-6 text-center border-t-4 border-red-600">
+        <div class="max-w-xl mx-auto space-y-6">
+
+            <div class="flex justify-center w-full">
+                <img
+                    src="68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f776174747061642d6d656469612d736572766963652f53746f7279496d6167652f7a47506837694b41774c544954513d3d2d3637373937393430322e313537623161376630643133646238323638303134373839303333322e6a7067.jpeg"
+                    alt="Ladybug y Chat Noir"
+                    class="w-full max-h-[450px] rounded-2xl border-2 border-red-600 shadow-[0_0_25px_rgba(229,9,20,0.7)] object-cover object-bottom transform hover:scale-[1.01] transition duration-500"
+                >
+            </div>
+
+            <h3 class="text-xl md:text-2xl font-bold tracking-wide text-red-400 drop-shadow-[0_2px_8px_rgba(229,9,20,0.6)]">
+                Siempre aquí...
+            </h3>
+
+            <p class="text-sm md:text-base text-gray-300 italic font-medium leading-relaxed">
+                "En cada silencio y en cada mirada, la promesa sigue intacta."
+            </p>
+
+            <p class="text-xs md:text-sm text-red-400/90 font-semibold tracking-wider">
+                Con calma. Con cariño. Sin prisa.
+            </p>
+
+
+        </div>
+    </footer>
+
+    <script>
+        function checkCode(event) {
+            event.preventDefault();
+            const input = document.getElementById('secretCode').value;
+            const errorMsg = document.getElementById('errorMessage');
+
+            if (input !== "575675675645467456745676666767566754766") {
+                errorMsg.classList.remove('hidden');
+            } else {
+                errorMsg.classList.add('hidden');
+                alert("¡Código correcto!");
+            }
+        }
+    </script>
+</body>
+</html>
